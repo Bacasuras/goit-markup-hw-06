@@ -858,8 +858,122 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .logo {
+    padding: 17.5px 0;
+  }
+  .nav-list {
+    display: none;
+  }
+  .address-flex {
+    display: none;
+  }
   .section {
     padding: 72px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/Dark-bg-mob.jpg);
+  }
+  .hero-title {
+    margin: 0 auto 72px;
+    /* padding-left: 59px;
+    padding-right: 60px; */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    line-height: 1.01;
+  }
+  .header-flex {
+    display: block;
+  }
+  .mob-menu {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 72px 24px 40px 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-mob-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .line-header-mob-one {
+    color: #404bbf;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+  .line-header-mob {
+    color: #2e2f42;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+  .line-header-mob:hover,
+  .line-header-mob:focus {
+    color: #404bbf;
+  }
+  .flex-box-mob {
+    margin-top: auto;
+  }
+  .contact-link-mob-one {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2; /* 120% */
+    letter-spacing: 0.02em;
+    color: #4d5ae5;
+  }
+  .contact-link-mob {
+    color: #434455;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2; /* 120% */
+    letter-spacing: 0.02em;
+  }
+  .contact-link-mob:hover,
+  .contact-link-mob:focus {
+    color: #404bbf;
+  }
+  .item-mob-link {
+    margin-bottom: 24px;
+  }
+  .address-flex-mob li:last-child {
+    margin-bottom: 48px;
+  }
+  .mob-social {
+    display: flex;
+    gap: 40px;
+  }
+  .mob-item {
+    width: 40px;
+    height: 40px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mob-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mob-svg {
+    fill: var(--cloud);
+  }
+  .menu-open-btn {
+    margin-left: auto;
+    border: none;
+  }
+  .section-two {
+    padding: 98px 0;
   }
   .svg-flex {
     display: none;
@@ -940,14 +1054,15 @@ img {
     width: 288px;
     min-height: 623px;
     flex-shrink: 0;
+    padding: 72px 16px 24px;
   }
   .modal-checkbox {
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
   }
-  .label-text {
-    color: red;
-    /* flex-wrap: wrap;
-    display: flex; */
+  .checkbox {
+    flex-shrink: 0;
   }
 }
 
@@ -959,6 +1074,15 @@ img {
   }
   .section {
     min-width: 768px;
+    padding: 112px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/hero/Dark-bg-tablet.jpg);
+  }
+  .mob-menu {
+    display: none;
+  }
+  .menu-open-btn {
+    display: none;
   }
   .container-two {
     margin: 0;
@@ -966,11 +1090,18 @@ img {
   .section-two {
     padding: 96px 0;
   }
+  .sub-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
   .section-two-flex {
     flex-wrap: wrap;
   }
   .items-flex-two {
-    flex-basis: calc((100% - 48px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
   }
   .svg-flex {
     display: none;
@@ -992,7 +1123,7 @@ img {
     flex-wrap: wrap;
   }
   .portfolio-flex-items {
-    flex-basis: calc((100% - 48px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
   }
   .footer-container {
     align-items: baseline;
@@ -1020,16 +1151,21 @@ img {
   .nav-list {
     margin: 0 auto;
   }
+  .modal {
+    padding: 72px 25px 24px 23px;
+  }
 }
 
-/* @media screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
   }
-
-  .items-flex-two {
-    width: calc((100% - 4 * 24px) / 3);
+  .mob-menu {
+    display: none;
   }
-} */
+  .menu-open-btn {
+    display: none;
+  }
+}
